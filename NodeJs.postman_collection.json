@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "86dd04ae-caf5-4b8f-8cf9-87562fe9a095",
+		"name": "NodeJs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14684045"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/auth/refresh-token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEwNDI1NjEsImV4cCI6MTcwMjYwMDE2MSwiYXVkIjoiNjM5YTEzMGFiYzAyZGZjODYzZDU5NWYxIiwiaXNzIjoiT3VyIHdlc2l0ZSBuYW1lIn0.m8DBFigu_Y-dJmedtgVBzeZbykU3eLXLMi3UkzcPMGI\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/refresh-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/delete-user/639a14ef7ed1080318d61f4e",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEwNDIyNTMsImV4cCI6MTY3MTA0Mjg1MywiYXVkIjoiNjM5YTEzMGFiYzAyZGZjODYzZDU5NWYxIiwiaXNzIjoiT3VyIHdlc2l0ZSBuYW1lIn0.G9d2MOxs4IIKDu2fbeexWnrbeYWNbcyhak5npGdXCSA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/auth/delete-user/639a14ef7ed1080318d61f4e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"delete-user",
+						"639a14ef7ed1080318d61f4e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/add-user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzEwNzA4MzcsImV4cCI6MTY3MTA3MjAzNywiYXVkIjoiNjM5YTg0MzcwODhlNGQ4ZTEyOTkyOTkxIiwiaXNzIjoiU2lhbSBJVCBzZXJ2aWNlcyJ9.wFCP5_0lx_0NNfOq5pDeRa8_RV9uCA6F-sjDZs0uTyY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"dedraj\",\r\n    \"email\": \"dedraj@gmail.com\", \r\n    \"password\": \"12345\", \r\n    \"phoneNumber\": \"9990987878\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/update-user/639a8824c44751e43f4abcbf",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiI2MzlhODgyNGM0NDc1MWU0M2Y0YWJjYmYiLCJpYXQiOjE2NzEwNzE4NDAsImV4cCI6MTY3MTA3MzA0MCwiaXNzIjoiTm9kZSBUZXN0In0.PocgFIuWoxR0qXXDpJ0JKyJrEA5allPenGdPTVw7K3I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"devanshu\", \r\n    \"email\": \"devanshu@gmail.com\", \r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/update-user/639a8824c44751e43f4abcbf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"update-user",
+						"639a8824c44751e43f4abcbf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dedraj@gmail.com\", \r\n    \"password\": \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
